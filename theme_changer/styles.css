@@ -1,0 +1,102 @@
+
+/* css variable */
+:root {
+    --bodycolor: #eaeaea;
+    --mainText: black;
+    --theme-border:#2a2f25;
+    --secondaryText:black;
+}
+
+/* General styles  */
+html * {
+    transition: .9s;
+}
+
+html body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bodycolor);
+
+}
+
+
+
+h1 {
+    color: var(--mainText);
+    font-family: cursive, sans-serif;
+    font-weight: 500;
+}
+
+h5 {
+    color: var(--mainText);
+}
+
+p {
+    color: var(--secondaryText);
+    list-style: none;
+    font-family: 'Roboto mono', monospace;
+
+}
+
+
+h1 {font-size: 30px;}
+h2 {font-size: 36px;}
+h5 {font-size: 16px;}
+
+
+/* content of sectiones / container */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+} 
+
+
+
+/* Start theme color changer */
+.theme-dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--secondaryText);
+    margin: 5px;
+    border: 2px solid var(--theme-border );
+}
+
+.theme-dot:hover {
+    border-width: 3px;
+}
+
+#light-mode {
+    background-color: #eaeaea;
+}
+#blue-mode {
+    background-color: #3c6081;
+}
+#green-mode {
+    background-color: #78866b;
+}
+#purple-mode {
+    background-color: #7e4c74;
+}
+
+#stings-note {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.theme-option-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
